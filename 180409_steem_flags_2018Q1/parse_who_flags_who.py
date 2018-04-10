@@ -108,7 +108,8 @@ for post in posts:
 
             # all other flags
             if voter not in bernie and voter not in exclude and \
-               author != 'haejin' and voter not in haejin:
+               voter not in grumpy and author != 'haejin' and \
+               voter not in haejin:
                 all_others.fill(created, rshares)
                 if voter_rep < author_rep:
                     others_reps[0] += 1
